@@ -226,7 +226,7 @@ export const PUBLICATIONS: Publication[] = [
     authors: [
       MEMBERS.daehyunkim,
       MEMBERS.hyungyushin,
-      MEMBERS.shakhnozakhonyadgarova,
+      MEMBERS.shahnozayadgarova,
       'Jinho Son',
       'Hariharan Subramonyam',
       MEMBERS.juhokim,
