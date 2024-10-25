@@ -189,6 +189,7 @@ export const PUBLICATIONS: Publication[] = [
     year: 2024,
     topics: ['learning'],
     type: 'Conference',
+    award: 'Shortlisted for ISCA Best Student Paper Award',
     links: [
       {
         url: 'https://arxiv.org/abs/2407.04280',
@@ -278,6 +279,7 @@ export const PUBLICATIONS: Publication[] = [
     year: 2024,
     topics: ['social'],
     type: 'Conference',
+    award: 'Resource Award',
     links: [
       {
         url: 'https://arxiv.org/abs/2308.16705',
