@@ -724,8 +724,8 @@ export const MEMBERS: Record<string, Member> = {
     site: 'https://graycoding.com/',
     currentPosition: 'Lead Frontend Engineer at Alvin',
   },
-  heechankim: {
-    firstName: 'Heechan',
+  haechankim: {
+    firstName: 'Haechan',
     lastName: 'Kim',
     kixlabPosition: 'Visiting Researcher',
     isAlumni: true,
