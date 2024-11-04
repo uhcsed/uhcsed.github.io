@@ -574,7 +574,7 @@ export const MEMBERS: Record<string, Member> = {
     firstName: 'Jean Young',
     lastName: 'Song',
     currentPosition: 'Assistant Professor at DGIST',
-    kixlabPosition: 'Visiting Researcher',
+    kixlabPosition: 'Postdoc Researcher',
     isAlumni: true,
     startYear: 2016,
     startSeason: 'Winter',
