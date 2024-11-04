@@ -1833,15 +1833,41 @@ const categorizeByPosition = (members: Record<string, Member>): Record<KixlabPos
     },
     {} as Record<KixlabPositionTypes, Member[]>
   )
-  // Sort each group by lastName and firstName
+
+  const seasonOrder = ['Winter', 'Fall', 'Summer', 'Spring']
+
   for (const position in groupedMembers) {
     groupedMembers[position as KixlabPositionTypes].sort((a, b) => {
+      // Determine effective endYear and endSeason for sorting
+      const aIsAlumni = a.isAlumni ?? false
+      const bIsAlumni = b.isAlumni ?? false
+
+      // Set endYear and endSeason with default values to ensure they are not undefined
+      const aEndYear = aIsAlumni ? (a.endYear ?? a.startYear ?? 3000) : 3000
+      const bEndYear = bIsAlumni ? (b.endYear ?? b.startYear ?? 3000) : 3000
+      const aEndSeason = aIsAlumni ? (a.endSeason ?? a.startSeason ?? 'Winter') : 'Winter'
+      const bEndSeason = bIsAlumni ? (b.endSeason ?? b.startSeason ?? 'Winter') : 'Winter'
+
+      // Rule 1: Sort by effective endYear in descending order
+      if (aEndYear !== bEndYear) {
+        return bEndYear - aEndYear // Descending order for endYear
+      }
+
+      // Rule 2: If endYear is the same, sort by endSeason
+      const seasonA = seasonOrder.indexOf(aEndSeason)
+      const seasonB = seasonOrder.indexOf(bEndSeason)
+      if (seasonA !== seasonB) {
+        return seasonA - seasonB // Winter first, then Fall, Summer, Spring
+      }
+
+      // Rule 3: If endYear and endSeason are the same, sort by name
       if (a.lastName === b.lastName) {
         return a.firstName.localeCompare(b.firstName)
       }
       return a.lastName.localeCompare(b.lastName)
     })
   }
+
   return groupedMembers
 }
 export const CURRENT_MEMBERS_BY_POSITION: Record<KixlabPositionTypes, Member[]> = categorizeByPosition(CURRENT_MEMBERS)
