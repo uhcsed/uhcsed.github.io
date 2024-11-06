@@ -219,6 +219,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://kixlab.github.io/website-files/2024/dis2024-pican-paper.pdf',
         type: PublicationLinkType.PDF,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3643834.3661579',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
 
@@ -240,6 +244,10 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://kixlab.github.io/website-files/2024/dis2024-aineedsplanner-paper.pdf',
         type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://dl.acm.org/doi/abs/10.1145/3643834.3661577',
+        type: PublicationLinkType.ACM,
       },
     ],
   },
@@ -267,6 +275,10 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://kixlab.github.io/website-files/2024/dis2024-podcast-paper.pdf',
         type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3643834.3660705',
+        type: PublicationLinkType.ACM,
       },
     ],
   },
@@ -501,6 +513,14 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://arxiv.org/abs/2403.09168',
         type: PublicationLinkType.ARX,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642867',
+        type: PublicationLinkType.ACM,
+      },
+      {
+        url: 'https://vivid.kixlab.org/',
+        type: PublicationLinkType.WEB,
+      },
     ],
   },
   {
@@ -524,6 +544,7 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://arxiv.org/abs/2403.02939',
         type: PublicationLinkType.ARX,
       },
+      { url: 'https://dl.acm.org/doi/10.1145/3613904.3642196', type: PublicationLinkType.ACM },
     ],
   },
   {
@@ -542,6 +563,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://creativeconnect.kixlab.org/',
         type: PublicationLinkType.WEB,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642794',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -559,6 +584,10 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://genquery.kixlab.org/',
         type: PublicationLinkType.WEB,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642847',
+        type: PublicationLinkType.ACM,
       },
     ],
   },
@@ -579,6 +608,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'http://tacitknowledge.kixlab.org/',
         type: PublicationLinkType.WEB,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642886',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -593,6 +626,14 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://arxiv.org/abs/2309.14534',
         type: PublicationLinkType.ARX,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642349',
+        type: PublicationLinkType.ACM,
+      },
+      {
+        url: 'https://teachyou.kixlab.org/',
+        type: PublicationLinkType.WEB,
       },
     ],
   },
@@ -611,6 +652,10 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://evallm.kixlab.org/',
         type: PublicationLinkType.WEB,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642216',
+        type: PublicationLinkType.ACM,
       },
     ],
   },
@@ -634,6 +679,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://arxiv.org/abs/2309.10245',
         type: PublicationLinkType.ARX,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642943',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -643,7 +692,12 @@ export const PUBLICATIONS: Publication[] = [
     year: 2024,
     topics: ['human-AI interaction', 'learning'],
     type: 'Conference',
-    links: [],
+    links: [
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3613904.3642752',
+        type: PublicationLinkType.ACM,
+      },
+    ],
   },
   {
     title: 'FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets',
@@ -677,7 +731,12 @@ export const PUBLICATIONS: Publication[] = [
     year: 2024,
     topics: ['human-AI interaction', 'learning'],
     type: 'Conference',
-    links: [],
+    links: [
+      {
+        url: 'https://arxiv.org/abs/2401.17343',
+        type: PublicationLinkType.ARX,
+      },
+    ],
   },
   {
     title:
@@ -789,7 +848,16 @@ export const PUBLICATIONS: Publication[] = [
     year: 2024,
     topics: ['human-AI interaction', 'social'],
     type: 'Conference',
-    links: [],
+    links: [
+      {
+        url: 'https://kixlab.github.io/website-files/2024/cscw2024-asr-paper.pdf',
+        type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3641008',
+        type: PublicationLinkType.ACM,
+      },
+    ],
   },
   {
     title: 'CodeTree: A System for Learnersourcing Subgoal Hierarchies in Code Examples',
@@ -798,7 +866,16 @@ export const PUBLICATIONS: Publication[] = [
     year: 2024,
     topics: ['crowdsourcing', 'learning'],
     type: 'Conference',
-    links: [],
+    links: [
+      {
+        url: 'https://kixlab.github.io/website-files/2024/cscw2024-codetree-paper.pdf',
+        type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3637308',
+        type: PublicationLinkType.ACM,
+      },
+    ],
   },
   {
     title: 'Re:SPect: Enabling Active and Scalable Responses to Networked Online Harassment',
@@ -807,7 +884,16 @@ export const PUBLICATIONS: Publication[] = [
     year: 2024,
     topics: ['social'],
     type: 'Conference',
-    links: [],
+    links: [
+      {
+        url: 'https://kixlab.github.io/website-files/2024/cscw2024-respect-paper.pdf',
+        type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3637394',
+        type: PublicationLinkType.ACM,
+      },
+    ],
   },
   {
     title: 'Cells, Generators, and Lenses: Design Framework for Object-Oriented Interaction with Large Language Models',
