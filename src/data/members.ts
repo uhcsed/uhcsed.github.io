@@ -177,11 +177,11 @@ export const MEMBERS: Record<string, Member> = {
   jihyeonghong: {
     firstName: 'Jihyeong',
     lastName: 'Hong',
+    email: 'z.hyeong@kaist.ac.kr',
     kixlabPosition: 'M.S. Student',
     img: 'jihyeong.jpg',
     startYear: 2020,
     startSeason: 'Summer',
-    affiliation: 'KAIST',
     site: 'https://harmonious-prune-381.notion.site/Jihyeong-Hong-44f4f7033cbb480e944eeaf8fb22b30a',
   },
   hyoungwookjin: {
@@ -242,7 +242,6 @@ export const MEMBERS: Record<string, Member> = {
     email: 'neohgeek@gmail.com',
     kixlabPosition: 'M.S. Student',
     img: 'daeheon.jpg',
-    affiliation: 'Sogang',
     startSeason: 'Fall',
     startYear: 2024,
   },
@@ -366,7 +365,6 @@ export const MEMBERS: Record<string, Member> = {
     kixlabPosition: 'M.S. Student',
     img: 'hyehyun.png',
     site: 'https://hyehyunchu.vercel.app/',
-    affiliation: 'KAIST',
     startSeason: 'Fall',
     startYear: 2024,
   },
