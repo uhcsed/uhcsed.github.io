@@ -33,7 +33,7 @@ export const COURSES: Course[] = [
 
   {
     title: 'Introduction to Social Computing',
-    code: 'CS474',
+    code: 'CS473',
     image: 'cs374.png',
     description:
       'Human-computer interaction no longer only concerns a single user in front of their computer. An increasing number of modern systems are inherently social, involving a large group of users to collaborate, discuss, ideate, solve problems, and make decisions together via social interaction. This course focuses on crowdsourcing and social computing, two of the most important concepts in the era of interaction at scale. This course will cover major design issues and computational techniques in building crowdsourcing and social computing systems.',
