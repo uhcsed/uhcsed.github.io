@@ -1834,7 +1834,7 @@ const categorizeByPosition = (members: Record<string, Member>): Record<KixlabPos
     {} as Record<KixlabPositionTypes, Member[]>
   )
 
-  const seasonOrder = ['Winter', 'Fall', 'Summer', 'Spring']
+  const seasonOrder = ['Fall', 'Summer', 'Spring', 'Winter']
 
   for (const position in groupedMembers) {
     groupedMembers[position as KixlabPositionTypes].sort((a, b) => {
