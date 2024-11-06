@@ -68,6 +68,10 @@ const Tags = styled.span`
   ${FontVariant.body_sm}
   color: ${Color.gray700};
 `
+const linkOrder = ['ACM DL', 'Website', 'arXiv', 'PDF', 'Slides', 'Poster', 'Video', 'Trailer']
+const sortLinksByType = (links: { url: string; type: string }[]) => {
+  return links.sort((a, b) => linkOrder.indexOf(a.type) - linkOrder.indexOf(b.type))
+}
 
 export const PublicationCard = ({ pub }: { pub: Publication }) => {
   return (
@@ -80,7 +84,7 @@ export const PublicationCard = ({ pub }: { pub: Publication }) => {
       <SubInfo>
         {pub.links && pub.links?.length > 0 && (
           <URLs>
-            {pub.links?.map(({ url, type }, i) => (
+            {sortLinksByType(pub.links).map(({ url, type }, i) => (
               <URL href={url} key={i} type={type} target="_blank">
                 {type}
               </URL>
