@@ -1112,6 +1112,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://kixlab.github.io/website-files/2023/chi2023-creatorfriendly-paper.pdf',
         type: PublicationLinkType.PDF,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3544548.3581386',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -1126,6 +1130,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://kixlab.github.io/website-files/2023/chi2023-videomap-paper.pdf',
         type: PublicationLinkType.PDF,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3544548.3581126',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -1139,6 +1147,10 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://kixlab.github.io/website-files/2023/chi2023-olderadults-paper.pdf',
         type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://dl.acm.org/doi/abs/10.1145/3544548.3580671',
+        type: PublicationLinkType.ACM,
       },
     ],
   },
@@ -1176,6 +1188,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://kixlab.github.io/website-files/2023/chi2023-surch-paper.pdf',
         type: PublicationLinkType.PDF,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3544548.3580772',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -1191,6 +1207,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://kixlab.github.io/website-files/2023/chi2023-modsandbox-paper.pdf',
         type: PublicationLinkType.PDF,
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3544548.3581057',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -1205,6 +1225,10 @@ export const PUBLICATIONS: Publication[] = [
         url: 'https://kixlab.github.io/website-files/2023/iui2023-LTGMs-paper.pdf',
         type: PublicationLinkType.PDF,
       },
+      {
+        url: 'https://dl.acm.org/doi/abs/10.1145/3581641.3584078',
+        type: PublicationLinkType.ACM,
+      },
     ],
   },
   {
@@ -1218,6 +1242,10 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://kixlab.github.io/website-files/2022/cscw2022-callout-paper.pdf',
         type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3555575',
+        type: PublicationLinkType.ACM,
       },
     ],
   },
