@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'KIXLAB',
     description: 'KIXLAB is a human-computer interaction research group in the School of Computing at KAIST.',
-    url: 'https://kixlab.kaist.ac.kr',
+    url: 'https://www.kixlab.org',
     images: [
       {
-        url: 'https://kixlab.kaist.ac.kr/images/logo_kaist_hci_white.png',
+        url: 'https://www.kixlab.org/images/logo.png',
         width: 1200,
         height: 630,
         alt: 'KIXLAB Open Graph Image',
