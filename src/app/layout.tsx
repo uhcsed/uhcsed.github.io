@@ -14,6 +14,20 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  openGraph: {
+    title: 'KIXLAB',
+    description: 'KIXLAB is a human-computer interaction research group in the School of Computing at KAIST.',
+    url: 'https://kixlab.kaist.ac.kr',
+    images: [
+      {
+        url: '/public/images/jura.png',
+        width: 1200,
+        height: 630,
+        alt: 'KIXLAB Open Graph Image',
+      },
+    ],
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
