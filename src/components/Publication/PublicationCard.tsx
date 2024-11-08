@@ -58,7 +58,7 @@ const URLs = styled.div`
 
 const Award = styled.div`
   ${FontVariant.body_sm}
-  background-color: #FFD580;
+  background-color: #8fd036;
   &::before {
     content: '🏆';
     margin-right: 2px;
