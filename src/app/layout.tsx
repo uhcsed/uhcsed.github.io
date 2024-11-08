@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: 'https://kixlab.kaist.ac.kr',
     images: [
       {
-        url: 'https://kixlab.kaist.ac.kr/images/logo.png',
+        url: 'https://kixlab.kaist.ac.kr/images/logo_kaist_hci_white.png',
         width: 1200,
         height: 630,
         alt: 'KIXLAB Open Graph Image',
