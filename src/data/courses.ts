@@ -76,7 +76,7 @@ export const COURSES: Course[] = [
     editions: [
       { semester: 'Spring 2020', url: 'https://www.kixlab.org/courses/i2r-spring-2020/' },
       { semester: 'Spring 2019', url: 'https://www.kixlab.org/courses/i2r-spring-2019/' },
-      { semester: 'Spring 2018', url: 'https://www.kixlab.org/courses/i2r-fall-2018/' },
+      { semester: 'Fall 2018', url: 'https://www.kixlab.org/courses/i2r-fall-2018/' },
     ],
   },
 ] as const satisfies Course[]
