@@ -89,16 +89,11 @@ const nextConfig = {
         permanent: true,
       },
 
-      // {
-      //   source: '/courses/i2r-spring-2020',
-      //   destination: 'https://cs492d-spring-2020.netlify.app/',
-      //   permanent: true,
-      // },
-      // {
-      //   source: '/courses/i2r-spring-2019',
-      //   destination: 'https://nmsl.kaist.ac.kr/courses/i2r/index.html',
-      //   permanent: true,
-      // },
+      {
+        source: '/courses/cs492d-spring-2020',
+        destination: 'https://cs492d-spring-2020.netlify.app/',
+        permanent: true,
+      },
       {
         source: '/courses/cs492c-fall-2018',
         destination: 'https://i2r.netlify.app/',
