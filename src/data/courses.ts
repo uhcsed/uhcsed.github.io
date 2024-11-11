@@ -14,6 +14,8 @@ export class Course {
   }
 }
 
+// course urls that begins with kixlab.org are redirected. redirection managed in next.config.js
+
 export const COURSES: Course[] = [
   {
     title: 'Introduction to Human-Computer Interaction',
