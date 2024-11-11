@@ -61,7 +61,7 @@ export const COURSES: Course[] = [
     url: 'https://kixlab.org/courses/hci/',
     editions: [
       { semester: 'Fall 2023', url: 'https://kixlab.org/courses/cs492-fall-2023/' },
-      { semester: 'Spring 2021', url: 'https://kixlab.org/courses/cs492-spring-2021/' },
+      { semester: 'Spring 2021', url: 'https://human-ai.kixlab.org/' },
       { semester: 'Fall 2020', url: 'https://kixlab.org/courses/cs492-fall-2020/' },
     ],
   },
@@ -74,9 +74,9 @@ export const COURSES: Course[] = [
       'Many (undergraduate) students at KAIST consider having a research career. Although there are research opportunities such as URP or lab internships, it is still difficult to assess whether research is right for oneself with such short research experience. Moreover, mentoring and guidelines for research beginners are not always available. This course is designed for students who want to understand which activities and tasks are involved in research and what characteristics and attitude are required to be great researchers. This course will provide students with a taste of various aspects of research, including how to find the right research area, how to approach your potential research advisor, how to identify papers to read, how to create good research ideas, how to write and present papers, how to interact with peers, and how to write a good CV.',
     url: 'https://kixlab.org/courses/hci/',
     editions: [
-      { semester: 'Spring 2020', url: 'https://www.kixlab.org/courses/i2r-spring-2020/' },
-      { semester: 'Spring 2019', url: 'https://www.kixlab.org/courses/i2r-spring-2019/' },
-      { semester: 'Fall 2018', url: 'https://www.kixlab.org/courses/i2r-fall-2018/' },
+      { semester: 'Spring 2020', url: 'https://www.kixlab.org/courses/cs492d-spring-2020/' },
+      { semester: 'Spring 2019', url: 'https://nmsl.kaist.ac.kr/courses/i2r/index.html' },
+      { semester: 'Fall 2018', url: 'https://www.kixlab.org/courses/cs492c-fall-2018/' },
     ],
   },
 ] as const satisfies Course[]
