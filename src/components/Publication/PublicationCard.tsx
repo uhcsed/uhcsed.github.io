@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { FontVariant, Color } from '@/app/theme'
+import { FontVariant, Color, Padding, Radius } from '@/app/theme'
 import { Publication } from '@/data/publications'
 import { URL } from '@/components/URL'
 import { Author } from './Author'
@@ -57,8 +57,14 @@ const URLs = styled.div`
 `
 
 const Award = styled.div`
+  display: inline-flex;
+  align-items: center;
   ${FontVariant.body_sm}
+  padding: ${Padding.y} ${Padding.x};
   background-color: #8fd036;
+  border-radius: ${Radius.sm};
+  color: ${Color.gray900};
+
   &::before {
     content: '🏆';
     margin-right: 2px;
