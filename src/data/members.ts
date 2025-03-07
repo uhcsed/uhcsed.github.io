@@ -21,13 +21,13 @@ interface Props {
   site?: string
   msThesis?: string
   phdThesis?: string
-  affiliation?: string
   // TODO: combine startYear and startSeason into a single Date field: startDate
   startYear?: number
   startSeason?: SeasonType
   endYear?: number
   endSeason?: SeasonType
   isAlumni?: boolean
+  affiliation?: string // the affiliation at the time of being at KIXLAB
   currentPosition?: string // for alumni
 }
 
@@ -179,6 +179,7 @@ export const MEMBERS = {
     lastName: 'Kim',
     email: 'juhokim@kaist.ac.kr',
     kixlabPosition: 'Faculty',
+    currentPosition: 'Associate Professor',
     img: 'juhokim.jpg',
     site: 'http://juhokim.com/',
     startYear: 2016,
