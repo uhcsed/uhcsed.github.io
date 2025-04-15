@@ -650,24 +650,6 @@ export const PUBLICATIONS: Publication[] = [
   },
   {
     title:
-      'One vs. Multiple: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations',
-    authors: [
-      MEMBERS.yoonjoolee,
-      MEMBERS.kihoonson,
-      MEMBERS.taesookim,
-      MEMBERS.jisukim,
-      MEMBERS.johnjoonyoungchung,
-      'Eytan Adar',
-      MEMBERS.juhokim,
-    ],
-    venue: 'FAccT 2024',
-    year: 2024,
-    topics: ['human-AI interaction'],
-    type: 'Conference',
-    links: [],
-  },
-  {
-    title:
       'EduLive: Re-Creating Cues for Instructor-Learner Interaction in Educational Live Streams with Learners’ Transcript-Based Annotations',
     authors: ['Jingchao Fang', MEMBERS.jeongeonpark, MEMBERS.juhokim, 'Hao-Chuan Wang'],
     venue: 'CSCW 2024',
@@ -2330,7 +2312,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     title: 'SolutionChat: Real-time Moderator Support for Chat-based Structured Discussion',
     authors: [
-      'Sung-Chul Lee',
+      MEMBERS.sungchullee,
       MEMBERS.jaeyoonsong,
       MEMBERS.eunyoungko,
       MEMBERS.seonghopark,
@@ -2590,7 +2572,7 @@ export const PUBLICATIONS: Publication[] = [
       MEMBERS.hyunwookim,
       MEMBERS.eunyoungko,
       MEMBERS.donghoonhan,
-      'Sung-chul Lee',
+      MEMBERS.sungchullee,
       MEMBERS.simonperrault,
       'Jihee Kim',
       MEMBERS.juhokim,
@@ -2714,12 +2696,12 @@ export const PUBLICATIONS: Publication[] = [
         type: PublicationLinkType.ACM,
       },
       {
-        url: 'https://kixlab.github.io/website-files/2018/mm2018-workshop-DynamicSlide-slides.pdf',
-        type: PublicationLinkType.SLI,
-      },
-      {
         url: 'https://juhokim.com/files/MM2018-Workshop-DynamicSlide.pdf',
         type: PublicationLinkType.PDF,
+      },
+      {
+        url: 'https://kixlab.github.io/website-files/2018/mm2018-workshop-DynamicSlide-slides.pdf',
+        type: PublicationLinkType.POS,
       },
     ],
   },
@@ -2743,7 +2725,7 @@ export const PUBLICATIONS: Publication[] = [
   },
   {
     title: 'Micro-NGO: Tackling Wicked Social Problems with Problem Solving and Action Planning Support in Chat',
-    authors: ['Sung-chul Lee', 'Jihee Kim', MEMBERS.juhokim],
+    authors: [MEMBERS.sungchullee, 'Jihee Kim', MEMBERS.juhokim],
     venue: 'CHI 2018 Extended Abstracts (Late Breaking Work)',
     year: 2018,
     topics: ['civics'],
