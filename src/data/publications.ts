@@ -1,5 +1,4 @@
 import { MEMBERS, Member } from './members'
-import { uniq } from 'lodash'
 
 export const PublicationTypes = ['Conference', 'Poster', 'Workshop', 'Journal', 'Preprint'] as const
 export type PublicationType = (typeof PublicationTypes)[number]
@@ -28,7 +27,7 @@ export enum PublicationLinkType {
 
 interface Props {
   title: string
-  authors: any[]
+  authors: (Member | string)[]
   year: number
   venue: string
   topics: ResearchTopicType[]
@@ -45,6 +44,28 @@ export class Publication {
 }
 
 export const PUBLICATIONS: Publication[] = [
+  {
+    title: "Investigating Large Language Models in Diagnosing Students' Cognitive Skills in Math Problem-solving",
+    authors: [
+      MEMBERS.hyoungwookjin,
+      MEMBERS.yoonsukim,
+      MEMBERS.dongyunjung,
+      MEMBERS.seungjukim,
+      'Kiyoon Choi',
+      'Jinho Son',
+      MEMBERS.juhokim,
+    ],
+    venue: 'arXiv preprint',
+    year: 2025,
+    topics: ['learning'],
+    type: 'Preprint',
+    links: [
+      {
+        url: 'https://arxiv.org/abs/2504.00843',
+        type: PublicationLinkType.ARX,
+      },
+    ],
+  },
   {
     title: 'Proxona: Supporting Creators’ Sensemaking and Ideation with LLM-Powered Audience Personas',
     authors: [MEMBERS.yoonseochoi, MEMBERS.eunjeongkang, MEMBERS.seulgichoi, 'Min Kyung Lee', MEMBERS.juhokim],
@@ -77,6 +98,10 @@ export const PUBLICATIONS: Publication[] = [
       {
         url: 'https://arxiv.org/html/2410.04078v1',
         type: PublicationLinkType.ARX,
+      },
+      {
+        url: 'https://teachtune.kixlab.org',
+        type: PublicationLinkType.WEB,
       },
     ],
   },
