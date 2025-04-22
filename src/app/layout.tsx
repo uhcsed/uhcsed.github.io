@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Noto_Sans } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-WY6K7SWSCE" />
     </html>
   )
 }
