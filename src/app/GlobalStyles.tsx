@@ -80,7 +80,7 @@ export default function GlobalStyles() {
         }
 
         *:focus-visible {
-          outline: 2px solid ${Color.orange700};
+          outline: 2px solid ${Color.red};
         }
       `}
     />

@@ -53,7 +53,7 @@ export const MediaSection = () => {
   return (
     <FullWidthContainer>
       <Section id="media-section">
-        <SectionHeader title="KIXLAB on Media" subtitle="Explore KIXLAB’s media realm" />
+        <SectionHeader title="Our LAB on Media" subtitle="Explore LAB's media space" />
         <MediaArea>
           {VIDEOS.map(video => (
             <VideoCard key={video.url}>
@@ -79,8 +79,8 @@ export const MediaSection = () => {
             justifyContent: 'center',
           }}
         >
-          <LinkButton href="https://www.youtube.com/@kixlabkaist5732" image="/images/youtube.svg" text="KIXLAB_KAIST" />
-          <LinkButton href="https://x.com/kixlab_kaist" image="/images/twitter-x.svg" text="@kixlab_kaist" />
+          <LinkButton href="https://www.youtube.com/@UniversityOfHouston" image="/images/youtube.svg" text="University of Houston" />
+          <LinkButton href="https://x.com/UHouston" image="/images/twitter-x.svg" text="@UHouston" />
         </div>
       </Section>
     </FullWidthContainer>

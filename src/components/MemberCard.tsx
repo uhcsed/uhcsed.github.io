@@ -59,40 +59,16 @@ const Buttons = styled.div`
 `
 
 const EmailButton = styled.a`
-  content: url('/images/email.svg');
+  content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png');
   width: 30px;
   height: 30px;
   padding: 7px;
   cursor: pointer;
 
   color: ${Color.white};
-  background-color: ${Color.gray700};
   border-radius: 50%;
 `
 
-const WebsiteButton = styled.a`
-  content: url('/images/website.svg');
-  width: 30px;
-  height: 30px;
-  padding: 6px;
-  cursor: pointer;
-
-  color: ${Color.white};
-  background-color: ${Color.gray700};
-  border-radius: 50%;
-`
-
-const ThesisButton = styled.a`
-  content: url('/images/thesis.svg');
-  width: 30px;
-  height: 30px;
-  padding: 7px;
-  cursor: pointer;
-
-  color: ${Color.white};
-  background-color: ${Color.gray700};
-  border-radius: 50%;
-`
 
 interface Props {
   member: Member
@@ -118,13 +94,11 @@ export const MemberCard = ({ member }: Props) => {
         </Name>
         <Affiliation>
           {member.currentPosition ||
-            ((member.kixlabPosition === 'Visiting Researcher' || member.kixlabPosition === 'Undergrad Intern') &&
+            ((member.position === 'Faculty' || member.position === 'Ph.D. Student') &&
               member.affiliation)}
         </Affiliation>
         <Buttons>
-          {member.email && <EmailButton href={`mailto:${member.email}`} />}
-          {member.site && <WebsiteButton href={member.site} target="_blank" rel="noopener noreferrer" />}
-          {member.msThesis && <ThesisButton href={member.msThesis} />}
+          {member.LinkedIn && <EmailButton href={`${member.LinkedIn}`} />}
         </Buttons>
       </Info>
     </Card>

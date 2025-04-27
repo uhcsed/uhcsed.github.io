@@ -1,11 +1,11 @@
-'use client'
+'use client';
 import React, { useState, useEffect, useRef } from 'react'
-import styled from '@emotion/styled'
+import Link from 'next/link';
+import styled from '@emotion/styled';
+import Image from 'next/image';
 
 import { FontVariant, Color, ScreenSize, linearlyScaleSize } from '@/app/theme'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
-import Link from 'next/link'
 
 interface Props {
   children: string
@@ -46,14 +46,19 @@ const NavContainer = styled.div`
   background-color: ${Color.white};
 `
 
-export const Logo = styled(Link)`
+export const Logo = styled.a`
   text-decoration: none;
-  ${FontVariant.title_sm}
-  color: ${Color.gray900};
+  ${FontVariant.title_lg}
+  color: ${Color.red};
   display: flex;
-  align-items: end;
-  gap: 8px;
+  align-items: center;
+  gap: 0px;
 `
+const Icon = styled(Image)`
+  height: 48px;
+  width: 48px;
+  margin-right: 8px;
+`;
 
 const NavRow = styled.div`
   display: block;
@@ -88,13 +93,13 @@ export const NavUl = styled.ul`
   }
 `
 
-const Anchor = styled(Link)<{ selected: boolean }>`
+const Anchor = styled(Link)<{ selected: boolean }>` 
   text-decoration: none;
-  color: ${props => (props.selected ? Color.orange900 : Color.gray600)};
-  box-shadow: ${props => (props.selected ? `0px 1px 0px 0px ${Color.orange900}` : null)};
+  color: ${props => (props.selected ? Color.red : Color.gray600)};
+  box-shadow: ${props => (props.selected ? `0px 1px 0px 0px ${Color.red}` : null)};
   &:hover {
     cursor: pointer;
-    color: ${Color.orange900};
+    color: ${Color.red};
   }
 `
 
@@ -131,7 +136,7 @@ const HamburgerButton = styled.input`
   display: none;
 
   &:checked + label > span {
-    background: ${Color.orange800};
+    background: ${Color.red};
   }
 `
 
@@ -172,7 +177,6 @@ const NavList = [
   { navItem: 'Home', path: '/' },
   { navItem: 'People', path: '/people' },
   { navItem: 'Publications', path: '/publications' },
-  { navItem: 'Courses', path: '/courses' },
   { navItem: 'News', path: '/news' },
 ]
 
@@ -216,10 +220,11 @@ export const NavBar = () => {
       <NavContainer>
         <Nav>
           <Logo href="/">
-            <Image src="/images/logo.png" width={100} height={26} alt="KIXLAB Logo" />
-            <ResponsiveSpan>KAIST Interaction Lab</ResponsiveSpan>
+            <Icon src="/images/uh_red.png" alt="UH Logo"
+              width={48} height={48}
+            />
+            CS Education Research Lab at UH
           </Logo>
-
           <NavRow>
             <NavUl>
               {NavList.map((item, i) => (

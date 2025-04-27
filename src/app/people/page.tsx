@@ -5,7 +5,7 @@ import { Divider } from '@/components/Divider'
 import { MemberCard } from '@/components/MemberCard'
 import { Section, SectionTitle, Sections } from '@/components/Section'
 import { Sidebar } from '@/components/SideBar'
-import { ALUMNI_MEMBERS_BY_POSITION, CURRENT_MEMBERS_BY_POSITION, KixlabPositions } from '@/data/members'
+import { ALUMNI_MEMBERS_BY_POSITION, CURRENT_MEMBERS_BY_POSITION, UHPositions } from '@/data/members'
 import styled from '@emotion/styled'
 import { startCase } from 'lodash'
 import React, { useRef } from 'react'
@@ -79,7 +79,8 @@ const SubCategoryTitle = styled.h2`
   margin-bottom: 8px;
 `
 
-const kixlabPositions = KixlabPositions // change this if you want to re-order the sections in the page.
+// Usar posiciones filtradas para quitar "Alumni" de UHPositions
+const Positions = UHPositions.filter(pos => pos !== 'Alumni');
 
 export default function Page() {
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({})
@@ -89,7 +90,7 @@ export default function Page() {
       <main style={{ padding: '0px', margin: '0px' }}>
         <h1>People</h1>
         <Sections>
-          {kixlabPositions.map(position => {
+          {Positions.map(position => {
             return (
               CURRENT_MEMBERS_BY_POSITION[position] &&
               CURRENT_MEMBERS_BY_POSITION[position].length > 0 && (
@@ -104,7 +105,7 @@ export default function Page() {
                     <SectionTitle>{position}</SectionTitle>
                     <SectionContent>
                       {CURRENT_MEMBERS_BY_POSITION[position].map(member => (
-                        <MemberCard key={member.email} member={member} />
+                        <MemberCard key={`${member.firstName}-${member.lastName}`} member={member} />
                       ))}
                     </SectionContent>
                   </Section>
@@ -120,17 +121,18 @@ export default function Page() {
               sectionRefs.current['alumni'] = el
             }}
           >
-            <SectionTitle id="alumni">Alumni</SectionTitle>
-            {KixlabPositions.map(position => {
+            <SectionTitle>Alumni</SectionTitle>
+            {/* Combinamos "Alumni" con otras posiciones que puedan tener alumnos */}
+            {Object.keys(ALUMNI_MEMBERS_BY_POSITION).map(position => {
               return (
                 ALUMNI_MEMBERS_BY_POSITION[position] &&
                 ALUMNI_MEMBERS_BY_POSITION[position].length > 0 && (
                   <React.Fragment key={position}>
-                    <SubCategoryTitle>{position}</SubCategoryTitle>
+                    {/* Solo mostrar la subcategoría si no es "Alumni" */}
+                    {position !== 'Alumni' && <SubCategoryTitle>{position}</SubCategoryTitle>}
                     <AlumniSectionContent>
-                      {ALUMNI_MEMBERS_BY_POSITION[position].map((alumnus, i) => (
-                        // TODO: populate alumni data with email field and use email as key
-                        <AlumniCard key={i} mem={alumnus} />
+                      {ALUMNI_MEMBERS_BY_POSITION[position].map((alumnus) => (
+                        <AlumniCard key={`${alumnus.firstName}-${alumnus.lastName}`} mem={alumnus} />
                       ))}
                     </AlumniSectionContent>
                   </React.Fragment>
@@ -138,21 +140,11 @@ export default function Page() {
               )
             })}
           </Section>
-          <Divider />
-          <Section key="thanks">
-            <SectionTitle id="thanks">Special Thanks</SectionTitle>
-            <SpecialThanksCard
-              img="/images/jura.png"
-              name="Jura"
-              position="Coffee Machine"
-              description="Thank you for your steadfast warmth and the delightful brews that kickstart my mornings"
-            />
-          </Section>
         </Sections>
       </main>
       <SideContainer>
         <Sidebar
-          sidebarList={[...kixlabPositions.map(position => startCase(position)), 'alumni']}
+          sidebarList={[...Positions.map(position => startCase(position)), 'alumni']}
           sectionRefs={sectionRefs}
         />
       </SideContainer>

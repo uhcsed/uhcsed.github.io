@@ -9,24 +9,21 @@ import { Color, FontVariant, FontSize, FontWeight } from '@/app/theme'
 const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 36px 48px;
+  align-items: center;
+  padding: 24px 48px;
   background-color: ${Color.gray600};
   margin-top: auto;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 20px
   }
 `
 
-const FooterTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
-  @media (max-width: 768px) {
+const FooterTextContainer = styled.div`   @media (max-width: 768px) {
     align-items: center;
   }
 `
@@ -41,14 +38,14 @@ const FooterText = styled(Link)`
     text-decoration: underline;
   }
 
-  @media (max-width: 768px) {
-    margin: 4px 0;
-  }
 `
-
+const FooterAddress = styled.div`
+display: flex;
+  flex-direction: column;
+  gap: 4px;
+`
 const FooterTextBold = styled.p`
   font-size: ${FontSize.body_md};
-  font-weight: ${FontWeight.body_lg};
   color: ${Color.white};
   text-decoration: none;
   margin: 0;
@@ -58,12 +55,10 @@ const FooterTextBold = styled.p`
   }
 `
 
-const FooterLogoContainer = styled.div`
+const FooterLogoContainer = styled.div` 
   display: flex;
   align-items: center;
-  gap: 8px;
-
-  @media (max-width: 768px) {
+   @media (max-width: 768px) {
     flex-direction: row;
     margin-top: 16px;
   }
@@ -76,23 +71,18 @@ const LogoLink = styled(Link)`
 export const Footer = () => {
   return (
     <FooterContainer>
-      <FooterTextContainer>
-        <FooterTextBold>Our Bunker</FooterTextBold>
-        <FooterText href="https://goo.gl/maps/8PG4bhyMoxwS1pXH8" target="_blank">
-          KAIST, N1 Room 624,
-          <br />
-          291 Daehak-ro, Yuseong-gu, Daejeon (34141)
-          <br />
-          Republic of Korea
-        </FooterText>
-      </FooterTextContainer>
-      <FooterLogoContainer>
-        <LogoLink href="http://hci.kaist.ac.kr" target="_blank">
-          <Image width={81} height={50} src="/images/logo_kaist_hci_white.png" alt="The HCI KAIST Logo" />
-        </LogoLink>
-        <LogoLink href="https://cs.kaist.ac.kr" target="_blank">
-          <Image width={148.41} height={40} src="/images/logo_kaist_soc_white.png" alt="School of Computing Logo" />
-        </LogoLink>
+        <FooterAddress>
+        <FooterTextBold>Department of Computer Science</FooterTextBold>
+          <FooterText href="https://goo.gl/maps/8PG4bhyMoxwS1pXH8" target="_blank">
+            Philip Guthrie Hoffman Hall<br />
+            3551 Cullen Blvd, Room 574<br />
+            Houston, Texas 77204-3010
+          </FooterText>
+        </FooterAddress>
+      <FooterLogoContainer >
+      
+
+        <Image width={48} height={48} src="/images/uh_red.png" alt="UH Logo" />
       </FooterLogoContainer>
     </FooterContainer>
   )

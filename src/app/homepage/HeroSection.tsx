@@ -82,21 +82,19 @@ export const HeroSection = () => {
       <HeroContainer>
         <HeroTextArea id="hero-text-area">
           <HeroTitle>
-            WELCOME TO <span style={{ color: `${Color.orange900}`, paddingRight: '7px' }}>KIXLAB</span>!
+            WELCOME TO <span style={{ color: `${Color.red}`, paddingRight: '7px' }}>OUR LAB</span>!
           </HeroTitle>
           <HeroSubtitle>
-            Research of <br /> <strong style={{ fontWeight: '700' }}>Human-Computer Interaction</strong> at Scale
+            Research of <br /> <strong style={{ fontWeight: '700' }}>Computing Education</strong> at University Of Houston
           </HeroSubtitle>
           <HeroMessage>
-            The KAIST Interaction Lab (KIXLAB) is a human-computer interaction research group in the School of Computing
-            at KAIST. Our mission is to improve ways people learn, collaborate, discuss, make decisions, and take action
-            online by designing new interactive systems that leverage and support interaction at scale.
+          Computing Education at University of Houston includes an interdisciplinary group of researchers and PhD students who study how students learn computing, effective pedagogies for teaching computing and effective learning at scale. Our research labs include Ph.D., M.S., and undergraduate students at UH.
           </HeroMessage>
         </HeroTextArea>
         <HeroImageContainer id="hero-image-container">
           <Image
             id="hero-image"
-            src={'/images/hero-image.webp'}
+            src={'/images/team.png'}
             alt="KIXLAB group picture"
             fill={true}
             priority

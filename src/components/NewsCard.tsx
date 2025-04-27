@@ -5,10 +5,10 @@ import { FontVariant, Color, ScreenSize } from '@/app/theme'
 import { Post } from '@/data/posts'
 
 export const categoryColors: { [key: string]: string } = {
-  publication: Color.orange900,
-  award: Color.orange700,
-  position: Color.orange600,
-  news: Color.orange500,
+  publication: Color.red,
+  award: Color.gray700,
+  position: Color.gray900,
+  news: Color.gray500,
 }
 
 const PostContainer = styled.div`
@@ -61,7 +61,7 @@ const Summary = styled.div`
 
 export const ReadMoreButton = styled.button`
   ${FontVariant.body_md}
-  color: ${Color.orange900};
+  color: ${Color.red};
   cursor: pointer;
   text-decoration: none;
   background-color: transparent;
@@ -78,7 +78,7 @@ export const ReadMoreButton = styled.button`
 const TimelineDot = styled.div<{ labelsOnLeft?: boolean }>`
   width: 6.4%;
   height: 2px;
-  background-color: ${Color.orange900};
+  background-color: ${Color.red};
   position: absolute;
   left: ${props => (props.labelsOnLeft ? 'calc(-3.2%)' : 'calc(100% + 3.2%)')};
   top: 28px;
@@ -113,7 +113,7 @@ export const NewsCard = ({ post, setModalContent, labelsOnLeft: labelsOnLeft }: 
             (expired ? (
               <Category style={{ backgroundColor: Color.gray400 }}>Closed</Category>
             ) : (
-              <Category style={{ backgroundColor: Color.green300 }}>Open</Category>
+              <Category style={{ backgroundColor: Color.gray400 }}>Open</Category>
             ))}
         </CategoryContainer>
         <Title>{post.title}</Title>

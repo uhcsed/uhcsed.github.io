@@ -14,7 +14,7 @@ const Name = ({ author, asterisks }: AuthorProps) => {
       {asterisks}
     </NotLabMember>
   ) : (
-    <LabMember key={author.email}>{`${author.firstName} ${author.lastName}${asterisks}`}</LabMember>
+    <LabMember key={author.LinkedIn}>{`${author.firstName} ${author.lastName}${asterisks}`}</LabMember>
   )
 }
 

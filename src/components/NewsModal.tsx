@@ -48,6 +48,22 @@ const Title = styled.div`
   padding-top: 4px;
 `
 
+const PaperButton = styled.button`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: ${Color.gray200};
+  border-radius: 4px;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 4px;
+  cursor: pointer;
+
+  .icon {
+    color: ${Color.red};
+  }
+`
+
 const CloseButton = styled.button`
   position: relative;
   width: 24px;
@@ -154,7 +170,7 @@ export const NewsModal = ({ post, onClose }: Props) => {
                     (expired ? (
                       <Category style={{ backgroundColor: Color.gray400 }}>Closed</Category>
                     ) : (
-                      <Category style={{ backgroundColor: Color.green300 }}>Open</Category>
+                      <Category style={{ backgroundColor: Color.gray400 }}>Open</Category>
                     ))}
                 </CategoryContainer>
                 <Title>{post.title}</Title>

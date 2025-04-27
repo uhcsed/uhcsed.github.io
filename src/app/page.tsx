@@ -13,3 +13,11 @@ export default function Page() {
     </main>
   )
 }
+
+
+import Image from 'next/image';
+
+<Image
+  src="/images/team.png"
+  alt="team"
+/>

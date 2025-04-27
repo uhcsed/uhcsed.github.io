@@ -20,8 +20,8 @@ const ResearchTopicItem = styled.div`
   border: thin solid ${Color.gray500};
   border-radius: 15px;
   &:hover {
-    box-shadow: 0px 0px 10px 0px ${Color.orange700};
-    border: thin solid ${Color.orange700};
+    box-shadow: 0px 0px 10px 0px ${Color.red};
+    border: thin solid ${Color.red};
   }
   transition: box-shadow 0.3s ease-in-out;
 `
@@ -72,7 +72,7 @@ const NUM_VISIBLE = 5
 export const ResearchThemesSection = () => {
   return (
     <Section id="research-section">
-      <SectionHeader title="Research Themes" subtitle="Discover the research happening at KIXLAB" />
+      <SectionHeader title="Research Interests" subtitle="Discover our research" />
       <ResearchTopicsArea>
         {RESEARCH_TOPICS.map(([topic, stats]) => {
           return (
@@ -92,13 +92,13 @@ export const ResearchThemesSection = () => {
                 </Text>
                 <ResearchTopicMembersArea>
                   {stats.authors.slice(0, NUM_VISIBLE).map((member: Member) => (
-                    <ResearchTopicsMemberAvatar
-                      width={36}
-                      height={36}
-                      src={`/members/${member.img}`}
-                      alt={`${member.firstName} ${member.lastName}`}
-                      key={member.email}
-                    />
+                        <ResearchTopicsMemberAvatar
+                          width={36}
+                          height={36}
+                          src={`/members/${member.img}`}
+                          alt={`${member.firstName} ${member.lastName}`}
+                          key={member.LinkedIn}
+                        />
                   ))}
                   {stats.authors.length > NUM_VISIBLE && (
                     <span style={{ width: '36px', textAlign: 'center' }}>+{stats.authors.length - NUM_VISIBLE}</span>

@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { startCase } from 'lodash'
 import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
-import { NAV_BAR_HEIGHT } from './NavBar'
+import { NAV_BAR_HEIGHT } from '@/components/NavBar'
 
 const SideBarContainer = styled.div`
   position: sticky;
@@ -23,11 +23,11 @@ const SidebarLink = styled(Link)`
   ${FontVariant.body_md}
 
   &.active {
-    color: ${Color.orange900};
+    color: ${Color.red};
   }
 
   &:hover {
-    color: ${Color.orange900};
+    color: ${Color.red};
     text-decoration: underline;
   }
 `
@@ -65,7 +65,10 @@ const capitalizeWords = (s: string) => {
 }
 
 export const Sidebar = React.forwardRef(
-  ({ handleLinkClick, sidebarList, sectionRefs, observerOptions = defaultObserverOptions }: ISidebar) => {
+  (
+    { handleLinkClick, sidebarList, sectionRefs, observerOptions = defaultObserverOptions }: ISidebar,
+    ref: React.ForwardedRef<HTMLDivElement>
+  ) => {
     const [activeSection, setActiveSection] = useState<string | null>(null)
     const ignoreObserver = useRef(false)
     useEffect(() => {
@@ -91,7 +94,7 @@ export const Sidebar = React.forwardRef(
     }, [sectionRefs, observerOptions])
 
     return (
-      <SideBarContainer>
+      <SideBarContainer ref={ref}>
         {/* TODO: replace sideBarList with sectionRefs */}
         {sidebarList.map(section => (
           <SidebarLink
