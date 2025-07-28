@@ -62,7 +62,7 @@ export const MEMBERS = {
   Mahdi: {
     firstName: "Mahdi",
     lastName: "Kazemi",
-    LinkedIn: "https://www.linkedin.com/in/almahdi-kazemi/",
+    LinkedIn: "https://www.linkedin.com/in/sadegh-almahdi-kazemi/",
     position: "Ph.D. Student",
     img: "Mahdi.jpg",
     isAlumni: false,

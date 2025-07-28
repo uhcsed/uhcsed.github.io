@@ -95,7 +95,7 @@ export const HeroSection = () => {
           <Image
             id="hero-image"
             src={'/images/team.png'}
-            alt="KIXLAB group picture"
+            alt="group picture"
             fill={true}
             priority
             style={{ position: 'absolute', objectFit: 'cover', width: '100%', height: '100%' }}

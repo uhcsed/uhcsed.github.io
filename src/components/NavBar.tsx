@@ -21,8 +21,6 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  // Prevent the KIXLAB logo from suddenly jumping to the left when shrinking the window
-  padding: 12px 24px 12px
     ${linearlyScaleSize({
       minSizePx: 24,
       maxSizePx: 96,
@@ -47,16 +45,21 @@ const NavContainer = styled.div`
 `
 
 export const Logo = styled.a`
-  text-decoration: none;
-  ${FontVariant.title_lg}
-  color: ${Color.red};
-  display: flex;
-  align-items: center;
-  gap: 0px;
+text-decoration: none;
+font-size: 24px; /* Tamaño de fuente para pantallas normales */
+font-weight: bold;
+color: ${Color.red};
+display: flex;
+align-items: center;
+gap: 0px;
+
+@media (max-width: ${ScreenSize.sm}) {
+  font-size: 18px; /* Tamaño de fuente para dispositivos móviles */
+}
 `
 const Icon = styled(Image)`
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
   margin-right: 8px;
 `;
 
@@ -220,10 +223,13 @@ export const NavBar = () => {
       <NavContainer>
         <Nav>
           <Logo href="/">
-            <Icon src="/images/uh_red.png" alt="UH Logo"
-              width={48} height={48}
-            />
-            CS Education Research Lab at UH
+            <Icon
+              src="/images/uh_red.png"
+              alt="UH Logo" width={48} height={48}
+            />{" "}
+            {
+                "CS Education Research Lab"
+            }
           </Logo>
           <NavRow>
             <NavUl>

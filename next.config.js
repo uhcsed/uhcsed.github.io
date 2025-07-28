@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Agrega esta línea si falta
+  images: { unoptimized: true }, // Necesario para exportación estática
   experimental: {
     cpus: 1,
   },

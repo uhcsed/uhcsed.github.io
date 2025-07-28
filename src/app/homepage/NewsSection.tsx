@@ -5,7 +5,6 @@ import styled from '@emotion/styled'
 import { LinkButton } from '@/components/LinkButton'
 import { PublicationCard } from '@/components/Publication/PublicationCard'
 import Link from 'next/link'
-import { URL } from '@/components/URL'
 import { Color } from '@/app/theme'
 
 const minCardWidth = 200
@@ -50,32 +49,33 @@ export const NewsSection = () => {
   const newsItems = [
     {
       title: 'Breaking the Programming Language Barrier: Multilingual Prompting to Empower Non-Native English Learners',
-      link: 'https://dl.acm.org/doi/10.1145/3699538.3706894',
+      acmUrl: 'https://dl.acm.org/doi/full/10.1145/3716640.3716649',
     },
     {
       title: 'To Google or To ChatGPT? A Comparison of CS2 Students\' Information Gathering Approaches and Outcomes',
-      link: 'https://arxiv.org/abs/2501.11935'
+      arxivUrl: 'https://arxiv.org/abs/2501.11935'
     },
     {
       title:
         'Students and Instructors Reflections on the Impact of COVID-19 on Computer Science Education after One Year of Remote Teaching',
-      link: 'https://link.springer.com/article/10.1007/s44217-025-00438-1',
+      acmUrl: 'https://link.springer.com/article/10.1007/s44217-025-00438-1',
     },
     {
       title: 'Student-AI Interaction: A Case Study of CS1 students',
-      link: 'https://dl.acm.org/doi/abs/10.1145/3699538.3699567',
+      acmUrl: 'https://dl.acm.org/doi/abs/10.1145/3699538.3699567',
     },
   ];
   const newsItemComponents = newsItems.map((item, index) => (
     <PublicationContainer key={index}>
       <PublicationTitle>{item.title}</PublicationTitle>
       <PublicationDate>
-        {item.link && (
-          <Link href={item.link} style={{marginLeft: '10px', display: 'flex'}}>
-            <URL href={item.link} />
-          </Link>
-        )}
       </PublicationDate>
+      {item.acmUrl && (
+        <LinkButton href={item.acmUrl} text="ACM" style={{ alignSelf: 'flex-start', marginTop: '8px' }} />
+      )}
+      {item.arxivUrl && (
+        <LinkButton href={item.arxivUrl} text="arXiv" style={{ alignSelf: 'flex-start', marginTop: '8px' }} />
+      )}
     </PublicationContainer>
   ));
 

@@ -8,12 +8,14 @@ import { LinkButton } from '@/components/LinkButton'
 import { YouTubeEmbed } from '@next/third-parties/google'
 
 const MediaArea = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex: auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 32px;
+  min-width:300px;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
 `
 
 const VideoCard = styled.div`

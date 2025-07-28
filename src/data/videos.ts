@@ -19,16 +19,4 @@ export const VIDEOS: Video[] = [
     title: 'Student-AI Interaction: A Case Study of CS1 students',
     date: new Date('2024-11-15'),
   },
-  {
-    url: 'https://www.youtube.com/embed/VvMDw6uwHM8?si=mbbsFaoeV3ZMmVy8',
-    id: 'VvMDw6uwHM8',
-    title: 'Student-AI Interaction: A Case Study of CS1 students',
-    date: new Date('2024-11-15'),
-  },
-  {
-    url: 'https://www.youtube.com/watch?v=VvMDw6uwHM8',
-    id: 'VvMDw6uwHM8',
-    title: 'Student-AI Interaction: A Case Study of CS1 students',
-    date: new Date('2024-11-15'),
-  },
 ] as const satisfies Video[]

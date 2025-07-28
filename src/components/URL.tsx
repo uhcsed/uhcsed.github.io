@@ -7,10 +7,10 @@ import Link from 'next/link'
 export const URL = styled(Link)`
   display: flex;
   align-items: center;
-  text-decoration: none;    
+  text-decoration: none;
   padding: 8px 16px;
-  ${FontVariant.body_md}
-  border-radius: ${Radius.sm};  
+  font-size: 16px;
+  border-radius: ${Radius.sm};
   width: fit-content;
   color: ${Color.gray900};
 
@@ -42,7 +42,7 @@ export const URL = styled(Link)`
     width: 16px;
     height: 16px;
 
-  }
+  }  
 
   &[href*='.pdf']::before {
     content: url('/images/pdf_icon.svg');
