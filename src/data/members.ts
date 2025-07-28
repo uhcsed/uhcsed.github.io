@@ -72,7 +72,7 @@ export const MEMBERS = {
     lastName: "Prol",
     LinkedIn: "https://www.linkedin.com/in/dannyprol/",
     position: "Ph.D. Student",
-    img: "photo.JPG",
+    img: "danielprol.jpg",
     isAlumni: false,
   },
   aftab: {
@@ -134,7 +134,7 @@ export const MEMBERS = {
     lastName: 'Daniels',
     isAlumni: true,
     currentPosition: 'undergraduate researcher, 2023'
-  },
+ },
   andrew:{
     firstName: 'Andrew',
     lastName: 'Truelove',
@@ -190,7 +190,7 @@ const categorizeByPosition = (members: Record<string, Member>): Record<string, M
         }
       }
       
-      // Si no tienen endYear o son iguales, compara por startYear
+      // Si no hay años para comparar o son iguales, compara por startYear
       if (a.startYear && b.startYear && a.startYear !== b.startYear) {
         return b.startYear - a.startYear;
       }
