@@ -72,7 +72,7 @@ export const MEMBERS = {
     lastName: "Prol",
     LinkedIn: "https://www.linkedin.com/in/dannyprol/",
     position: "Ph.D. Student",
-    img: "Daniel.jpg",
+    img: "photo.JPG",
     isAlumni: false,
   },
   aftab: {
