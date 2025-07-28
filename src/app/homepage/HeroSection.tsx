@@ -82,7 +82,7 @@ export const HeroSection = () => {
       <HeroContainer>
         <HeroTextArea id="hero-text-area">
           <HeroTitle>
-            WELCOME TO <span style={{ color: `${Color.red}`, paddingRight: '7px' }}>OUR LAB</span>!
+            WELCOME 2 <span style={{ color: `${Color.red}`, paddingRight: '7px' }}>OUR LAB</span>!
           </HeroTitle>
           <HeroSubtitle>
             Research of <br /> <strong style={{ fontWeight: '700' }}>Computing Education</strong> at University Of Houston
