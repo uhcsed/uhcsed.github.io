@@ -69,7 +69,7 @@ export const MEMBERS = {
   },
   Daniel: {
     firstName: "Daniel",
-    lastName: "Proll",
+    lastName: "Prol",
     LinkedIn: "https://www.linkedin.com/in/dannyprol/",
     position: "Ph.D. Student",
     img: 'Daniel.jpg',
