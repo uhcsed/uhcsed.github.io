@@ -93,6 +93,33 @@ export const PUBLICATIONS: Publication[] = [
     ],
   },
   {
+    title: 'From prompts to propositions: A logic-based lens on student-llm interactions',
+    authors: [
+      MEMBERS.Ali,
+      'Mahdi Kazemi',
+      'Daye Nam',
+      MEMBERS.Daniel,
+      MEMBERS.Matin,
+      'Souti Chattopadhyay',
+      'James Prather',
+      'Paul Denny',
+      'Juho Leinonen',
+      'Michael Hilton',
+      'Sruti Srinivasa Ragavan',
+      MEMBERS.amin
+    ],
+    venue: '',
+    year: 2025,
+    topics: ['Computing Education', 'AI in Education', 'Programming Education', 'Student Behavior'],
+    type: 'Preprint',
+    links: [
+      {
+        url: 'https://arxiv.org/abs/2504.18691',
+        type: PublicationLinkType.ARX,
+      },
+    ],
+  },
+  {
     title: 'Students and Instructors Reflections on the Impact of COVID-19 on Computer Science Education after One Year of Remote Teaching',
     authors: [
       'Giulia Toti',
