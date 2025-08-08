@@ -67,6 +67,14 @@ const EmailButton = styled.a`
   color: ${Color.white};
 ` as any;
 
+const WebsiteButton = styled.a`
+ content: url('https://www.svgrepo.com/show/506808/globe.svg');
+ width: 30px;
+ height: 30px;
+ cursor: pointer;
+
+ color: ${Color.white};
+` as any;
 
 interface Props {
   member: Member
@@ -96,6 +104,7 @@ export const MemberCard = ({ member }: Props) => {
               member.affiliation)}
         </Affiliation>
         <Buttons>
+          {member.site && <WebsiteButton href={`${member.site}`} />}
           {member.LinkedIn && <EmailButton href={`${member.LinkedIn}`} />}
         </Buttons>
       </Info>

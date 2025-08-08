@@ -42,6 +42,7 @@ export const MEMBERS = {
     currentPosition: 'Associate Professor',
     img: "Amin.jpg",
     isAlumni: false,
+    site: "https://www.aminalipour.com/"
   },
   Matin: {
     firstName: "Matin",
@@ -74,6 +75,7 @@ export const MEMBERS = {
     position: "Ph.D. Student",
     img: "danielprol.jpg",
     isAlumni: false,
+    site: "https://www.danielprol.com/"
   },
   aftab: {
     firstName: 'Aftab',
