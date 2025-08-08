@@ -62,12 +62,10 @@ const EmailButton = styled.a`
   content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png');
   width: 30px;
   height: 30px;
-  padding: 7px;
   cursor: pointer;
 
   color: ${Color.white};
-  border-radius: 50%;
-`
+` as any;
 
 
 interface Props {
