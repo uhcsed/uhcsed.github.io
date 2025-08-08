@@ -88,7 +88,7 @@ export const HeroSection = () => {
             Research of <br /> <strong style={{ fontWeight: '700' }}>Computing Education</strong> at University Of Houston
           </HeroSubtitle>
           <HeroMessage>
-          Computing Education at University of Houston includes an interdisciplinary group of researchers and PhD students who study how students learn computing, effective pedagogies for teaching computing and effective learning at scale. Our research labs include Ph.D., M.S., and undergraduate students at UH.
+          Computing Education at University of Houston includes an interdisciplinary group of researchers and PhD students who study how students learn computing, effective pedagogies for teaching computing and effective learning at scale.
           </HeroMessage>
         </HeroTextArea>
         <HeroImageContainer id="hero-image-container">
