@@ -68,12 +68,9 @@ const EmailButton = styled.a`
 ` as any;
 
 const WebsiteButton = styled.a`
- content: url('https://www.svgrepo.com/show/506808/globe.svg');
- width: 30px;
- height: 30px;
- cursor: pointer;
-
- color: ${Color.white};
+  content: url('/images/website-click-svgrepo-com.svg');
+  width: 30px;
+  height: 30px;
 ` as any;
 
 interface Props {

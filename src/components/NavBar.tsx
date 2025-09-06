@@ -228,7 +228,7 @@ export const NavBar = () => {
               alt="UH Logo" width={48} height={48}
             />{" "}
             {
-                "CS Education Research Lab"
+                "Societal Systems and Software Lab"
             }
           </Logo>
           <NavRow>
