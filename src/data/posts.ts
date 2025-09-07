@@ -16,6 +16,13 @@ export class Post {
 
 export const POSTS: Post[] = [
   {
+    title: '"From Prompts to Propositions: A Logic-Based Lens on Student-LLM Interactions" is accepted to Koli Calling 2025',
+    date: new Date('2025-09-07'), // Using today's date as acceptance announcement date
+    categories: [''],
+    summary:
+      'Our paper introducing Prompt2Constraints, a novel method that translates student prompts into logical constraints, has been accepted to Koli Calling 2025. The research analyzed 1,872 prompts from 203 students and provides new insights into how students interact with LLMs for programming tasks. [Paper](https://arxiv.org/abs/2504.18691).',
+  },
+  {
     title: 'New preprint! 🚀 ',
     date: new Date('2025-04-26'),
     categories: [''],
