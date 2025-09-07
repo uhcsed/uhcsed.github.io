@@ -9,8 +9,8 @@ import GlobalStyles from '@/app/GlobalStyles'
 const notoSans = Noto_Sans({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
-  title: 'CS Education Research Lab',
-  description: 'CS Education Research Lab is a research group focused on Computer Science education.',
+  title: 'Societal Systems and Software Lab',
+  description: 'Societal Systems and Software Lab is a research group focused on Computer Science education and Software Engineering (Security).',
   icons: {
     icon: {
       url: '/uh_red.png',
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: 'CS Education Research Lab',
-    description: 'CS Education Research Lab is a research group focused on Computer Science education.',
-    url: 'https://your-website.com',
+    title: 'Societal Systems and Software Lab',
+    description: 'Societal Systems and Software Lab is a research group focused on Computer Science education and Software Engineering (Security).',
+    url: 'https://uhcsed.web.app/',
     images: [
       {
         url: 'https://your-website.com/images/logo_preview.png',
