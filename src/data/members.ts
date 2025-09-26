@@ -77,6 +77,14 @@ export const MEMBERS = {
     isAlumni: false,
     site: "https://www.danielprol.com/"
   },
+  Saleh: {
+    firstName: "Saleh",
+    lastName: "Alkhamees",
+    LinkedIn: "",
+    position: "Ph.D. Student",
+    img: "Saleh.jpeg",
+    isAlumni: false,
+  },
   aftab: {
     firstName: 'Aftab',
     lastName: 'Hussain',
